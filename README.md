@@ -10,7 +10,7 @@
 - **Version Control**: EML uses GitHub for version control, ensuring the library remains up-to-date and ready for collaboration.
 
 ## Installation
-To install EML, simply download the `EML.lua` script and include it in your Roblox game. Be sure to set up your environment by configuring the appropriate settings in `_G.EMLSettings`.
+To install EML, simply insert this line: `local EML = loadstring(game:HttpGet(https://raw.githubusercontent.com/aerialasf/EML.lua/refs/heads/main/Main.lua"))()` Be sure to set up your environment by configuring the appropriate settings in `_G.EMLSettings`.
 
 ## Usage
 ```lua
@@ -18,9 +18,10 @@ _G.EMLSettings = { -- Example of how to change the settings
     debug = false,
     firstonly = true,
 }
-local EML = require(game.ServerStorage.EML)  -- Example of how to load the library
+local EML = loadstring(game:HttpGet("https://raw.githubusercontent.com/aerialasf/EML.lua/refs/heads/main/Main.lua"))()  -- Example of how to load the library
 
-local moveset = EML:Create() -- How to make a moveset
+local moveset = EML:Create("ExampleMoveset") -- How to make a moveset
+
 moveset:Set("Move1", { -- How to set a property
     "AnimationId",
     {}, -- Animation details
