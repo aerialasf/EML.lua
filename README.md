@@ -19,5 +19,15 @@ _G.EMLSettings = { -- Example of how to change the settings
     firstonly = true,
 }
 local EML = require(game.ServerStorage.EML)  -- Example of how to load the library
+
+local moveset = EML:Create() -- How to make a moveset
+moveset:Set("Move1", { -- How to set a property
+    "AnimationId",
+    {}, -- Animation details
+    function() EML:DebugPrint("Wow!") end, -- Animation callback
+    "Move1", -- Move name
+})
+
+
 EML:Init()  -- Initialize EML with custom settings & set movesets
 ```
