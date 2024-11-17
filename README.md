@@ -34,7 +34,7 @@ EML:Init()  -- Initialize EML with custom settings & set movesets
 ```
 
 ## Q/A
-- **Why can't I use any other characters than Saitama?**: You can only currently use Saitama as the original character. May add more on 1.2.0
+- **Why can't I use any other characters than Saitama?**: You can only currently use Saitama as the original character. May add more on 1.1.0
 - **It errored when I used :Create()!**: You need an id for the moveset. Or you may have just used the wrong variable containing the library. I try everything to make it work.
 - **The library is confusing!**: I'm continuously trying to make it easy as possible to make a moveset. Please make an issue and describe what you don't understand.
 - **Why does my animations not play?**: Check if the animation id is correct. Animations will not play if it isn't made by the game's creator ("Yielding Arts"). You can get banned if the animation is a bait animation or is deprecated/others.
